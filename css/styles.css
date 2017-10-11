@@ -1,0 +1,169 @@
+/* BASE STYLING */
+
+*, *:before, *after {
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container {
+	width: 1024px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+/* HEADER STYLING */
+
+.header {
+	background-size: cover;
+	background-color: black;
+	max-width: 100%;
+	border-bottom: solid 5px #FFF653;
+}
+
+h1 {
+	color: #FFF653;
+	font-family: 'Merriweather', sans-serif;
+	font-size: 30px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.list {
+	float: right;
+}
+
+.header li {
+	display: inline-block;
+}
+
+li a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-right: 10px;
+
+}
+
+a {
+	font-family: 'Oswald', sans-serif;
+}
+
+li:nth-child(n+3) a {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* TAGLINE STYLING */
+
+.tagline {
+	max-width: 100%;
+	border-top: solid 1px #999999;
+	background-color: #C6C6C6;
+	padding: 20px;
+}
+
+.tagline h2 {
+	text-align: center;
+	font-family: 'Merriweather', sans-serif;
+	font-style: italic;
+	font-size: 25px;
+}
+
+del {
+	color:  #AAAAAA;
+}
+
+ins {
+	text-decoration-color: #FFF653;
+}
+
+/* Look at how to do background image in FEWD slides. Above is incorrect */
+
+/* INTRO STYLING */
+
+.intro {
+	background: url(../images/coworking.jpg);
+	background-size: cover;
+}
+
+.box h3 {
+	font-size: 25px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.box p {
+	font-size: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.box a {
+	background-color: #FFF653;
+	color: black;
+	border-radius: 5px;
+	border-bottom: solid 2px #CEC441;
+}
+
+
+/* FIDDLE WITH DIFFERENT WAYS
+
+TRY TO DO IT WITH LISTS
+
+.three-containers .container {
+	width: 33.3333333%;
+} */
+
+/* INFO STYLING */
+
+.three-containers .container:nth-child(1) {
+	width: 33.3333333%;
+}
+
+.three-containers .container:nth-child(2) {
+	width: 33.3333333%;
+}
+
+.three-containers .container:nth-child(3) {
+	width: 33.3333333%;
+}
+
+.container h4 {
+	font-family: 'Merriweather', sans-serif;
+	padding: 10px;
+}
+
+.container p {
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 10px;
+}
+
+.container a {
+	background-color: #C6C6C6;
+	color: black;
+	border-radius: 5px;
+	border-bottom: solid 2px;
+	margin: 10px;
+	text-decoration: none;
+}
+
+/* FOOTER STYLING */
+
+.footer {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+
