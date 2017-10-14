@@ -1,3 +1,5 @@
+
+
 /* BASE STYLING */
 
 *, *:before, *after {
@@ -16,8 +18,29 @@
 
 .container {
 	width: 1024px;
-	max-width: 90%;
+	max-width: 98%;
 	margin: 0 auto;
+	display: inline-block;
+}
+
+/* FONT STYLING */
+
+.list li:nth-child(n+3) a {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: none;
+}
+
+a {
+	font-family: 'Oswald', sans-serif;
+
+}
+
+.tagline h2, .block h3, h1 {
+	font-family: 'Merriweather', sans-serif;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;	
 }
 
 /* HEADER STYLING */
@@ -31,7 +54,6 @@
 
 h1 {
 	color: #FFF653;
-	font-family: 'Merriweather', sans-serif;
 	font-size: 30px;
 	float: left;
 	margin-top: 20px;
@@ -46,36 +68,34 @@ h1 {
 	display: inline-block;
 }
 
-li a {
-	text-decoration: none;
-	color: white;
-	font-size: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
-	padding-right: 10px;
-
-}
-
 a {
-	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 15px;
 }
 
-li:nth-child(n+3) a {
-	font-family: 'Source Sans Pro', sans-serif;
+a:hover {
+	background-color: #AAAAAA;
 }
 
+.head {
+	color: white;
+	padding: 0px 10px;
+}
+
+/* HOME PAGE STYLING */
 /* TAGLINE STYLING */
 
 .tagline {
 	max-width: 100%;
 	border-top: solid 1px #999999;
 	background-color: #C6C6C6;
-	padding: 20px;
+	padding: 25px;
 }
 
 .tagline h2 {
 	text-align: center;
-	font-family: 'Merriweather', sans-serif;
 	font-style: italic;
 	font-size: 25px;
 }
@@ -88,72 +108,135 @@ ins {
 	text-decoration-color: #FFF653;
 }
 
-/* Look at how to do background image in FEWD slides. Above is incorrect */
-
 /* INTRO STYLING */
 
 .intro {
 	background: url(../images/coworking.jpg);
 	background-size: cover;
+	padding: 40px 0px;
+}
+
+.box {
+	width: 270px;	
+	background-color: rgba(255,255,255,0.7);
+	margin-left: auto;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	padding: 20px 20px 40px 20px;
+
+}
+.cta {
+	color: black;
+	text-align: center;
+
+}
+
+.cta-yellow {
+	background-color: #FFF653;
+	border-radius: 5px;
+	border-bottom: 3px solid #CEC441;
+	padding: 10px 50px;
+	margin: 50px 10px;
+	text-align: center;
+}
+
+.cta-yellow:hover {
+	background-color: #CEC441;
 }
 
 .box h3 {
 	font-size: 25px;
-	font-family: 'Source Sans Pro', sans-serif;
+	padding-top: 10px;
+	font-weight: 600;
 }
 
-.box p {
+.container .box p {
 	font-size: 20px;
-	font-family: 'Source Sans Pro', sans-serif;
+	padding-bottom: 50px;
+	line-height: 1.6;
+
 }
-
-.box a {
-	background-color: #FFF653;
-	color: black;
-	border-radius: 5px;
-	border-bottom: solid 2px #CEC441;
-}
-
-
-/* FIDDLE WITH DIFFERENT WAYS
-
-TRY TO DO IT WITH LISTS
-
-.three-containers .container {
-	width: 33.3333333%;
-} */
 
 /* INFO STYLING */
 
-.three-containers .container:nth-child(1) {
-	width: 33.3333333%;
+.three-teasers {
+	background-color: white;
 }
 
-.three-containers .container:nth-child(2) {
-	width: 33.3333333%;
+.block {
+	width: 32.66666667%;
+	list-style: none;
+	float: left;
+	border-right: 1px solid #C6C6C6;
 }
 
-.three-containers .container:nth-child(3) {
-	width: 33.3333333%;
+.three-teasers ul {
+	padding: 0;
+	margin: 0;
 }
 
-.container h4 {
-	font-family: 'Merriweather', sans-serif;
-	padding: 10px;
+.block:last-child {
+	border-right: none;
 }
 
-.container p {
-	font-family: 'Source Sans Pro', sans-serif;
-	padding: 10px;
+.block h3 {
+	margin: 0;
+	font-size: 30px;
+	padding: 30px 25px 5px 25px;
 }
 
-.container a {
+.block p {
+	line-height: 1.6;
+	padding: 10px 25px 30px 25px;
+	font-size: 20px;
+}
+
+.cta-grey {
 	background-color: #C6C6C6;
-	color: black;
 	border-radius: 5px;
-	border-bottom: solid 2px;
-	margin: 10px;
-	text-decoration: none;
+	border-bottom: 3px solid #999;
+	padding: 10px 30px;
+	margin-left: 25px;
+}
+
+.cta-grey:hover {
+	background-color: #999;
+}
+
+/* DEVELOPERS PAGE STYLING */
+
+body {
+	background-color: #C6C6C6;
+}
+
+.photo {
+	height: auto;
+	width: auto;
+	max-height: 280px;
+	max-width: 280px;
+	display: inline-block;
+
+}
+
+.main ul {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.profile {
+	list-style: none;
+	display: inline-block;
+	width: 20%;
+	background-color: white;
+}
+
+.des {
+	list-style: none;
+	display: inline-block;
+	background-color: #696969;
+	padding: 2px 10px;
+	border-radius: 20px;
+	color: white;
+	text-align: left;
 }
 
 /* FOOTER STYLING */
@@ -162,8 +245,6 @@ TRY TO DO IT WITH LISTS
 	background-color: black;
 	color: white;
 	padding: 10px;
-	font-family: 'Source Sans Pro', sans-serif;
-
 }
 
 
